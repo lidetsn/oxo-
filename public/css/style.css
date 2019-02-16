@@ -4,14 +4,16 @@
   body {
 	background-color: black;
   }
-  
+  .fa-spinner{
+	  font-size: 50px
+  }
   .strike {
 	position: relative;
 	display: block;
 	cursor: pointer;
   }
   
-#title,h4,h5{
+#title,h4,h5,h6{
 	font-family: cursive;
 }
 
@@ -19,7 +21,7 @@
 	content: '';
 	position: absolute;
 	width: 0%;
-	height: 5px;
+	height: 1.5px;
 	top: 50%;
 	margin-top: -0.5px;
 	background: #fff;
@@ -103,11 +105,11 @@ table {
 }
 
 .playerX{
-	color: #ff77aa;
+	color: #50210f
 }
 
 #XTag{
-	color: #ff77aa;
+	color: #50210f;
 	font-weight: bold;
 }
 
@@ -116,12 +118,12 @@ table {
 }
 
 #OTag{
-	color: #77aaff;
+	color: #91bb4d;
 	font-weight: bold;
 }
 
 .playerO{
-	color: #77aaff;
+	color: #91bb4d;;
 }
 
 #scoreTitle{
@@ -134,20 +136,6 @@ table {
 	font-size: 150%;
 	height: 5vh;
 	width: 18vh;
-}
-
- 
-
-.menuBtn:hover{
-	background-color: #e56b99 !important;
-}
-
-.menuBtn:active{
-	background-color: #e56b99 !important;
-}
-
-.menuBtn:visited{
-	background-color: #e56b99 !important;
 }
 
 .actionBtn{
@@ -231,5 +219,5 @@ form{
 	display: none
 }
 .waitSpinner{
-	size: 39px
+	size: 25px
 }

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tic Tac Toe</title>
+		<title>O X O</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -9,8 +12,8 @@
 	
 	</head>
 	<body>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-					<a class="navbar-brand" href="#">Tic Tac Toe-nament</a>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark  mt-5">
+					<a class="navbar-brand" href="#">O X O Toe-nament</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
 					  aria-expanded="false" aria-label="Toggle navigation">
 					  <span class="navbar-toggler-icon"></span>
@@ -22,23 +25,41 @@
 										</li>
 													
 									</nav>
-		<div class="container mt-5">				
-			<h5 class="text-center ">you must have an account to Host or join the tournament</h5>
-		<div class="row"> <div class="col-sm-4"></div><div class="col-sm-4">
-			<form id="loginOrRegister" action="/Tournament">
-				<div class="form-group">
-				  <label for="exampleInputEmail1">Username or Email address</label>
-				  <input type="email" class="form-control" id="loginName" aria-describedby="emailHelp" placeholder="Enter email" required>
-				</div>
-				<div class="form-group">
-				  <label for="exampleInputPassword1">Password</label>
-				  <input type="password" class="form-control" id="loginPassword" placeholder="Password">
-				</div>					
-				<button type="submit" class="btn btn-primary" id="login">Log-In</button>
-				<button type="submit" class="btn btn-primary" id ="register">Register</button>					
-			  </form></div><div class="col-sm-4"></div></div>
-					
+						
+			<div class="container loginForm mt-5">
+					<div class="row ">
+							<div class="col-md-6 ">
+									<div class="row  mb-5">
+											<div class="col-md-12">
 
+							<h6 class="text-muted">please login or create an account to Host or join the tournament</h6>
+											</div>
+										</div >
+							<div class="rowr">
+
+						<div class="col-md-12 text-muted">
+							<form>
+								<div class="form-group text-muted">
+									<label for="exampleInputEmail1 ">Username or Email address</label>
+									<input type="email" class="form-control" id="loginName" aria-describedby="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input type="password" class="form-control" id="loginPassword" placeholder="Password">
+								</div> 
+							 <div>
+								<button type="submit" class="btn btn-primary mr-5 mb-2">Log-In</button>
+								<button type="submit" class="btn btn-primary mb-2" id ="register">Register</button>
+							</div>
+							</form>
+					</div></div></div>
+					<div class="col-md-6"> <h4 class="navbar-text">
+							Become the Champion!
+					</h4></div>
+					</div>
+						</div>
+					
+						<div class="container mt-5">
             <!-- creat/join page -->
 			<div id="menu"   style="display: none;">
 				<h1>Tic - Tac - Toe</h1>
@@ -57,7 +78,7 @@
 		   <div id="eachTornamentPage"  style="display: none;">
 			<h6 id="user"></h6>
 				<h4>Wel come To</h4>
-				<h4>Tic - Tac - Toe</h4>
+				<h4>O X O</h4>
 				<h4> Tournament</h4>
 				<h4 id="tornamentName" class="bg-primary my-5 text-white"></h4>
 			<div class="row">

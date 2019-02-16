@@ -47,7 +47,7 @@ app.get('/game', function(req, res){
 })
 
 app.get('/', function(req, res){
-	res.sendFile(__dirname + '/public/index.html')
+	res.sendFile(__dirname + '/views/index.html')
 })
 app.get('/Tournament', function(req, res){
 	gameQuery = req.query
